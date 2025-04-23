@@ -7,6 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import shapiro
+import os
 
 #2.Existance Assertion
 #Assertion: every record has a non-null name field
@@ -118,17 +119,28 @@ def validate_age_at_hire(file_path):
 #Assertion: each employee has a manager who is a known employee
 #Add code to your program to validate this assertion
 #How many records violate this assertion?
-# Assertion: Each employee's manager ID must exist as another employee ID
-def validate_manager_ids(file_path):
-    df = pd.read_csv(file_path)
-  # Validate the assertion: Each employee has a manager who is a known employee
-    invalid_records = df[~df['reports_to'].isin(df['eid'])]
+def validate_managers(df):
+    """
+    Validates that each employee has a manager who is also a known employee.
+    Returns the number of invalid records and a DataFrame with the violating records.
+    """
+    employee_ids = set(df['eid'])
 
-# Count the number of records violating the assertion
-    #violating_count = invalid_records.shape[0]
-    violating_count = len(invalid_records)
+    # Filter out employees whose manager is not a known employee, excluding NaNs
+    invalid_managers = df[~df['reports_to'].isin(employee_ids) & df['reports_to'].notna()]
 
-    print(f"Number of records violating the assertion: {violating_count}")
+    num_invalid = len(invalid_managers)
+    
+    if num_invalid == 0:
+        print("✅ All employees report to a valid, known employee.")
+    else:
+        print(f"❌ Number of records that violate the manager assertion: {num_invalid}")
+        print("Details of invalid records:")
+        print(invalid_managers[['eid', 'name', 'reports_to']])
+    
+    #return num_invalid, invalid_managers
+    return num_invalid
+
 
 #Define a new, different Inter-record Assertion
 # New Inter-record Assertion: 
@@ -242,6 +254,9 @@ if __name__ == "__main__":
     file_path = "/Users/arlysswest/Desktop/cs-410/data validation/data validation lab/employees.csv"
     df = pd.read_csv(file_path)
 
+    #file_size = os.path.getsize(file_path)
+    #print(f"File size: {file_size} bytes")
+
 #2. EXISTANCE ASSERTATIONS
     #2.A. existance assertation: name validation count
     invalid_count = validate_file(file_path)
@@ -270,8 +285,8 @@ if __name__ == "__main__":
 
 #5. INTER-RECORD ASSERTATIONS
     #5.A. Inter-record Assertion
-    violations = validate_manager_ids(file_path)
-    print(f"employees who do not have a manager: {violations}")
+    validation=validate_managers(df)
+    print(f"emloyees without a manager: {validation}")
 
 
     #5.B. new/different Inter-record Assertion
