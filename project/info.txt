@@ -1,0 +1,4 @@
+base.py
+runner.py loops through validations
+registry.py dictionary of availible optiobns
+emp_validate.py 
