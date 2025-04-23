@@ -1,0 +1,18 @@
+
+import requests
+import json
+
+vehicle_ids = [2926, 2928]  
+
+for vid in vehicle_ids:
+    url = f"https://busdata.cs.pdx.edu/api/getBreadCrumbs?vehicle_id={vid}"
+    resp = requests.get(url)
+    if resp.status_code == 200:
+        all_data.extend(resp.json())
+    else:
+        print(f"Failed to fetch for vehicle {vid}")
+
+with open("bcsample.json", "w") as f:
+    json.dump(all_data, f, indent=2)
+
+print(f"Saved {len(all_data)} records to bcsample.json")
