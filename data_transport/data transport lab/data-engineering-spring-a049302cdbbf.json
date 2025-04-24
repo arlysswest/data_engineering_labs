@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "data-engineering-spring",
+  "private_key_id": "a049302cdbbf7ae82b210a68cfa10d9e843eb50c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+CHUfkJYoTOqL\nI0OnYE0s1sPEzxlbTb+95qkez06owe2qqorwXzPxue88friOFYrYWlTK0vwoBZDK\n3RG7/bqvrr++I1L9FQLHoX5a23j3Tc5sKozOWjnPEL3TrOQdIwdD5pvYRGpqd2rO\n8mb4KPwc27T90XobzUa3bvR4gQA+dKTeCLPk2W+iRuIf4HNE/IJewTMh4kfFCU8W\nzbr69BUrVtiT8zV2eGOH6ZPKf4App0wyFdYymj6qdIKJNDVETu+0iFKN2ahWPWea\nsx09Fhy6vDtF7WUwQ9fjoT8hroiGKt+qQEgH9wTrVBJjVGqBam6NS4xLDI2osKKD\nTI6y8IzpAgMBAAECggEACzXwBOvwc9Gvz4QF0Hi9rMzBsVlfX1PLoT4bkYn807dX\nGEel2S7gn1zO+IRoSleKgJ95m5qNTiYf59vZWTwLeKRIQwUN9wi3iIPmMqF6dip0\nqExtUJohiW3tKPDs5ywjGFYhMQW+OmgvmKRTv0WZs/EhMQ0b1UqLprQov3gqxcRd\nVGPFMxgYRiQJcFKrsIY+pRUiL53ovgzgrSzlv6mn61CCwwetV34OL61CtJWoE9Io\nxFCvJ5gU03KlxA4o6IOnhiwqBJI1xySopxKVgvJADHDRw31hlLw2T37dP9VWmBBI\nnu0+0KQXM9lB2RP08MCNw/D9NOoHeXvzMavKhZz7oQKBgQDc71VxjKvbF9BrkVK4\nwLEk2CEtW1yxhpPir18bMkeEU8llOWbILk3uwUcQS4UOsewKUXBVHYojen5zGEm9\nQYW/1gb1TXoNl0E2aTjkWwZ0Pnz1Jp1nWVVkTFXmd9GyRuI0iOFgG55CZ6O3j3RD\nDCepRh0XsynZrausayx67gmaOQKBgQDcMZHdZMF6XugMSuijvic7//obA3tqcjJu\n1XmWbVrNdoEDjHHiMCdMlc40xxxu8/ulCOQthK8kG5XnRNKAcQ+rVjD3w0vurpnx\nrb7Y9BZQIGrDVEHu1Zq0TSw1o8gd4Xd4NuHxrkb94Rpd81tT23ZqmSd1xmbfpdcL\n79XFtYpIMQKBgA/bneZokm1HaE5QP//C1PQwDzGSPTUA09yReeIZ2chFu07or9fu\neumINfGVehdz7d1PuyBg3mltgWYBeEl9SnxagGVbCkevc57ULqE1Z2Ewmwd9ng6s\n+tQYJpJER2jkbZgXuxWK5fEeP0INqeqmFLKxtaTd10MolAnsJ2UrcMUBAoGBALB7\nbmyi58ubq6LGm0U6EBov5RanqNA9LRzWLriZdzC8bVUZyOFANQ9V9kso1yo6lRPG\nV5QAB5wKHBCbgZf+hk+OKns6ZW6tNKeW2SLsJ8Ia6Vca/ildvLwMKoXnemownt+U\nJW3ef/nV5JsuhKFmgbeYfx8PYL6aHgzsMktfYLDRAoGBAL4IMHg5kfEqA5/jWNzn\nqRz4rWBlN7JIV/8VlTuAnUqz4N+8Cs+GrrgVjKfHCkgu0bdZU+1HLEVRyW7VQhZ5\n2KSlZmO8c3QnEFGL5yzMlPl/b7XVa9kF0dGyJJYWLHIVXmo5u2fk3x6eYLheY2Oh\n/INP8HZSfgglEs6B8ujrG+d8\n-----END PRIVATE KEY-----\n",
+  "client_email": "data-engineering-lab@data-engineering-spring.iam.gserviceaccount.com",
+  "client_id": "102610783090160574329",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/data-engineering-lab%40data-engineering-spring.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

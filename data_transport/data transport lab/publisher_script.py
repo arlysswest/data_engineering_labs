@@ -6,7 +6,7 @@ import os
 
 # Set path to your credentials (if not set in shell)
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/arlysswest/keys/gcloud-creds.json"
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] ="/Users/arlysswest/Desktop/cs-410/data transport/data transport lab/data-engineering-spring-a049302cdbbf.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] ="/Users/arlysswest/Desktop/cs-410/data_transport/data transport lab/data-engineering-spring-a049302cdbbf.json"
 # Set topic path
 project_id = "data-engineering-spring"  
 topic_id = "MyTopic"
