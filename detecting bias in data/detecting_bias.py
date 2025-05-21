@@ -148,7 +148,7 @@ all_relpos = relpos_df["RELPOS"].values
 #B. For each vehicle in the system:
 gps_bias_results = []
 
-for vehicle, group in relpos_df.groupby("vehicle_number"):
+for vehicle, group in relpos_df.groupby("VEHICLE_NUMBER"):
     vehicle_relpos = group["RELPOS"].values
     if len(vehicle_relpos) > 1:  # avoid t-test on tiny samples
         pval = ttest_1samp(vehicle_relpos, popmean=all_relpos.mean()).pvalue
@@ -159,6 +159,7 @@ print(f"RELPOS values: {vehicle_relpos}")
 print(f"probability that the vehicles observed replos values occured given the null hypothesis (null hypothesis) that there is no bias .... {pval}")
 #C. List the IDs of vehicles (and their corresponding p values) having p < 0.005 
 biased_gps_vehicles = [(v, p) for v, p in gps_bias_results if p < 0.005]
+print(f"ids od vehicles and corresponding p values: {biased_gps_vehicles} ")
 #D. List at least three potential reasons or causes for such bias  
 #1. 
 #2. 
